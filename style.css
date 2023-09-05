@@ -1,0 +1,49 @@
+@keyframes moveX {
+  from { left: 0; } to { left: 80vw; }
+}
+
+@keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
+
+@keyframes moveA {
+  from { right: 0; } to { right: 90vw; }
+}
+
+@keyframes moveB {
+  from { bottom: 0; } to { bottom: 80vh; }
+}
+
+.bouncingBall {
+  background: linear-gradient(90deg, rgba(50,117,129,1) 31%, rgba(0,212,255,1) 80%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+  opacity: 0.5;
+}
+
+.bouncingBall-1 {
+  animation: moveX 7s linear 0s infinite alternate, moveY 10s linear 0s infinite alternate;
+}
+
+.bouncingBall-2 { animation-delay: 1s;
+  animation: moveX 12s linear 0s infinite alternate, moveY 7s linear 0s infinite alternate;
+}
+
+.bouncingBall-3 {
+  animation: moveA 9s linear 0s infinite alternate, moveB 6s linear 0s infinite alternate;
+}
+
+.bouncingBall-4 {
+  animation: moveA 6s linear 0s infinite alternate, moveB 12s linear 0s infinite alternate;
+}
+
+@media (max-width: 768px) {
+  /* Reduce the ball size for small screens */
+  .bouncingBall {
+    width: 80px;
+    height: 80px;
+  }
+}
