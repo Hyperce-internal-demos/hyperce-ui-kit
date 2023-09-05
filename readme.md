@@ -1,0 +1,1 @@
+##### Avoid using plain js inisde codebase folder 
