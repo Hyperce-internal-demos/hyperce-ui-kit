@@ -40,10 +40,10 @@
     animation: moveA 6s linear 0s infinite alternate, moveB 12s linear 0s infinite alternate;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     /* Reduce the ball size for small screens */
     .bouncingBall {
-      width: 80px;
-      height: 80px;
+      width: 150px;
+      height: 150px;
     }
   }
