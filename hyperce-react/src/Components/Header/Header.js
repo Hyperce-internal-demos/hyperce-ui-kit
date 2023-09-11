@@ -14,8 +14,10 @@ export default function Header() {
       <header className="fixed top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gray-900 border-b border-white/[.5] text-sm py-3 sm:py-0">
         <nav className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
           <div className="flex items-center justify-between">
+            <div className='flex items-center'>
             <img src={logo} alt="Hyperce Logo" className="w-8 h-8 mb-2" />
-            <h1 className="text-lg text-white">Hyperce</h1>
+            <h1 className="text-lg text-gray-400">Hyperce</h1>
+            </div>
             <div className="sm:hidden">
               <button
                 type="button"

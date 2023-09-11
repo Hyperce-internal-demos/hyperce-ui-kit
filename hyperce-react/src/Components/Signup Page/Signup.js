@@ -6,12 +6,12 @@ export default function Signup() {
   return (
     
         <>
-    <div className=" absolute top-10 block sm:grid sm:grid-cols-2 m-10 bg-gray-900  xl:shadow-2xl shadow-indigo-800 rounded-3xl">
+    <div className="m-4 relative top-10 block sm:grid sm:grid-cols-2 bg-gray-900  xl:shadow-2xl shadow-indigo-800 rounded-3xl">
     <div className="p-3 xl:p-20">
     <div className="rounded-xl border-none bg-white shadow-lg shadow-gray-200">
-        <div className="p-10">
+        <div className="p-3 sm:p-10">
           <div className="text-center">
-          <h1 className="block text-base sm:text-xl font-bold text-gray-800">Sign in</h1>
+          <h1 className="block text-base sm:text-xl font-bold text-gray-800">Sign Up</h1>
           <p className="mt-2 text-xs sm:text-sm text-gray-600">
               Already have an account?&nbsp;
               <Link to="/login" className="text-blue-600 decoration-2 hover:underline font-medium" >
@@ -78,7 +78,7 @@ export default function Signup() {
     
      </div>
      <div className="bg-white hidden sm:block rounded-3xl">
-      <img src={Demo} alt="Demo" className="hw-full h-auto md:h-full md:w-auto rounded-e-3xl"/>
+      <img src={Demo} alt="Demo" className="h-full w-full rounded-e-3xl"/>
      </div>
   </div>
         </>

@@ -4,10 +4,10 @@ import { Link} from 'react-router-dom';
 
 export default function Signin() {
   return (
-    <div className="relative top-10 mx-auto sm:grid sm:grid-cols-2 m-10 bg-gray-900  xl:shadow-2xl shadow-indigo-800 rounded-3xl">
+    <div className="relative top-10 sm:grid sm:grid-cols-2 m-10 bg-gray-900  xl:shadow-2xl shadow-indigo-800 rounded-3xl">
     <div className="p-3 xl:p-20">
         <div className="rounded-xl border-none bg-white shadow-lg shadow-gray-200">
-            <div className="p-10">
+            <div className="p-3 sm:p-10">
                 <div className="text-center">
                     <h1 className="block text-base sm:text-xl font-bold text-gray-800">Sign in</h1>
                     <p className="mt-2 text-xs sm:text-sm text-gray-600">
