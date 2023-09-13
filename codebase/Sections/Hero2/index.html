@@ -6,85 +6,248 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Hero</title>
 </head>
-<body style="background-color: rgb(249, 300, 250);">>
-    <main class="flex justify-center items-center min-h-screen">
-        <section>
-            <div class="mx-auto flex flex-col md:flex-row  rounded-xl">
-                <div class="p-4 md:p-10 me-40">
-                    <span class="text-sm lg:text-xl block inline-flex items-center gap-1.5 py-1.5 px-3 mb-10 rounded-full text-xs font-medium bg-red-100 text-red-800">Welcome Back</span>
-                    <h3 class="text-8xl font-semibold text-gray-800 ">
-                        Helping you learn <br>about the world
+<body style="background-color: rgb(249, 300, 250);" class="p-10 lg:p-20">
+    <main>
+        <section class="static flex justify-center items-center">
+            <div class="relative mx-auto flex flex-col sm:flex-row">
+                <img src="./images/party-streamer.svg"  alt="art" class="w-16 lg:w-24 absolute top-32 right-0 xl:-left-16 ">
+                
+                
+                <div class="p-4 md:p-10 shadow-sm">
+                    <span class="text-xl lg:text-4xl block inline-flex items-center gap-1.5 py-1.5 px-3 lg:py-3 lg:px-4 mb-4 lg:mb-10 rounded-full text-xs font-medium bg-red-100 text-red-800">Welcome Back</span>
+                    <h3 class="text-4xl lg:text-6xl font-bold lg:font-medium xl:text-8xl  text-gray-800 ">
+                        Helping you learn <br /> about the world
                     </h3>
-                    <p class="mt-8 text-2xl font-semibold text-gray-500 ">
-                        We bring students and teachers together to create a more <br> personalized learning experience and foster.
+                    <p class="xl:w-1/2 mt-4 lg:mt-8 text-lg md:text-xl xl:text-2xl font-semibold text-gray-500">
+                        We bring students and teachers together to create a  more personalized learning experience and foster.
                     </p>
-                    <button type="button" class="mt-10 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-orange-400 text-gray-800 hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm lg:text-xl">
+                    <div class="inline-flex items-center justify-center">
+                    <button type="button" class="mt-5 lg:mt-10 p-1.5 lg:py-6 lg:px-8 inline-flex justify-center items-center gap-2 rounded-md lg:rounded-full border border-transparent font-semibold bg-orange-400 text-gray-800 hover:bg-orange-200 duration-500 text-sm lg:text-xl">
                         Book a Demo
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16" style="vertical-align: middle; stroke-width: 2; stroke: currentColor;">
                             <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
                         </svg> 
                     </button>
-                    <button class="ml-4 border border-gray-600 text-gray py-3 px-6 rounded-full hover:bg-orange-200 text-sm lg:text-xl" >
+                    <button class="ml-4 mt-6 lg:mt-10 border border-gray-600 text-gray p-1.5 lg:py-6 lg:px-8 rounded-md lg:rounded-full hover:bg-orange-200 duration-500 text-sm lg:text-xl" >
                         Try for free
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-up-right inline" viewBox="0 0 16 16" style="vertical-align: middle; stroke-width: 2; stroke: currentColor;">
                             <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
                         </svg> 
                     </button>
                 </div>
+                </div>
         
                 <!-- New card on the right -->
-                <div class="md:w-1/3 bg-green-100 dark:bg-gray-700 p-4 md:p-10 font-serif rounded-xl">
+                <div class="relative md:max-w-xl mt-5 p-4 md:p-10 font-serif rounded-xl shadow-lg" style="background-color: #b4d2b3;">
+                    <div class="absolute h-18 w-18 px-2 py-2 rounded-full -top-4 -right-24 bg-orange-300 font-semibold shadow-lg">
+                        <div class="flex items-center justify-center">
+                        <div class=" flex items-center justify-center w-8 h-8 bg-white rounded-full ml-2">
+                            <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16"> <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" fill="red"></path> </svg> 
+                        </div>
+                        <span class="border w-16 h-2 bg-gray-200 rounded-full ml-2"></span>
+                        <span class="border w-4 h-4 bg-white rounded-full ml-2"></span>
+                    </div>
+                    </div>
+                    <div class="absolute left-4  xl:-left-24 -bottom-8 xl:-bottom-2 px-6 py-3 xl:px-12 xl:py-6 rounded-full  bg-white font-semibold shadow-xl">
+                        <div class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shield-slash-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.093 3.093c-.465 4.275.885 7.46 2.513 9.589a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.32 11.32 0 0 0 1.733-1.525L1.093 3.093zm12.215 8.215L3.128 1.128A61.369 61.369 0 0 1 5.073.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.483 3.626-.332 6.491-1.551 8.616zm.338 3.046-13-13 .708-.708 13 13-.707.707z"/> </svg>
+                       <span class=" text-sm xl:text-2xl font-semibold ml-2"> Report a bug</span>
+                    </div>
+                    </div>
                     <!-- First vertically stacked card -->
-                    <div class="bg-white border shadow-sm rounded-xl mb-4">
+                    <div class=" bg-white border shadow-sm rounded-xl">
                         <div class="p-4">
-                            <span class="text-4xl block font-bold text-black">Courses for Entry Level</span>
-                            small images <br />
-                            <div class="mt-10 text-black text-2xl flex justify-between font-semibold" >
+                            <span class="text-2xl md:text-4xl block font-semibold text-black">Courses for Every Level</span>
+                            <div class="flex mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="profile" width="32" height="32">
+                                    <circle cx="16" cy="16" r="15" fill="#96d7ff"></circle>
+                                    <path fill="#86c3ef" d="M2.35,17A15,15,0,0,1,25.59,4.48a15,15,0,1,0-17.83,24A15,15,0,0,1,2.35,17Z"></path>
+                                    <path fill="#bf9e99" d="M16,6.09a7.31,7.31,0,0,0-7.3,7.3v15.1a1,1,0,0,0,.55.89,14.87,14.87,0,0,0,13.5,0,1,1,0,0,0,.55-.89V13.39A7.31,7.31,0,0,0,16,6.09Z"></path>
+                                    <path fill="#ff9797" d="M16,31a14.88,14.88,0,0,0,10.09-3.94.62.62,0,0,0,0-.23,6.65,6.65,0,0,0-6.3-4.54h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23A14.88,14.88,0,0,0,16,31Z"></path>
+                                    <path fill="#e47979" d="M6.51,27.39a6.67,6.67,0,0,1,6.3-4.54h7.51a6.62,6.62,0,0,1,4.38,1.68,6.65,6.65,0,0,0-4.95-2.24h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23c.18.17.38.32.57.48A.8.8,0,0,1,6.51,27.39Z"></path>
+                                    <path fill="#ecc5b4" d="M18.7,15.83H13.3a1,1,0,0,0-1,1V23.3a1,1,0,0,0,.45.83l2.7,1.8a1,1,0,0,0,1.1,0l2.7-1.8a1,1,0,0,0,.45-.83V16.83A1,1,0,0,0,18.7,15.83Z"></path>
+                                    <path fill="#ecc5b4" d="M21.5,12.77h-11a3,3,0,0,0,0,6h11a3,3,0,0,0,0-6Z"></path>
+                                    <path fill="#f4dab7" d="M18.46,9H13.54a3.49,3.49,0,0,0-3.49,3.49v3.36a5.95,5.95,0,0,0,11.9,0V12.46A3.49,3.49,0,0,0,18.46,9Z"></path>
+                                    <path fill="#d6b5b0" d="M23.2,12.66l.06,0A7.28,7.28,0,0,0,12.88,6.8a1.08,1.08,0,0,0,.06.77,9.75,9.75,0,0,0,2.94,3.58,8.84,8.84,0,0,0,5.28,1.76A9,9,0,0,0,23.2,12.66Z"></path>
+                                    <path fill="#d6b5b0" d="M19,6.76A7.29,7.29,0,0,0,8.7,13.39v.39a7.85,7.85,0,0,0,1.19.09,9.26,9.26,0,0,0,7-3.21A10.45,10.45,0,0,0,19,6.8Z"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="profile" width="32" height="32">
+                                    <circle cx="16" cy="16" r="15" fill="#96d7ff"></circle>
+                                    <path fill="#86c3ef" d="M2.35,17A15,15,0,0,1,25.59,4.48a15,15,0,1,0-17.83,24A15,15,0,0,1,2.35,17Z"></path>
+                                    <path fill="#bf9e99" d="M16,6.09a7.31,7.31,0,0,0-7.3,7.3v15.1a1,1,0,0,0,.55.89,14.87,14.87,0,0,0,13.5,0,1,1,0,0,0,.55-.89V13.39A7.31,7.31,0,0,0,16,6.09Z"></path>
+                                    <path fill="#ff9797" d="M16,31a14.88,14.88,0,0,0,10.09-3.94.62.62,0,0,0,0-.23,6.65,6.65,0,0,0-6.3-4.54h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23A14.88,14.88,0,0,0,16,31Z"></path>
+                                    <path fill="#e47979" d="M6.51,27.39a6.67,6.67,0,0,1,6.3-4.54h7.51a6.62,6.62,0,0,1,4.38,1.68,6.65,6.65,0,0,0-4.95-2.24h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23c.18.17.38.32.57.48A.8.8,0,0,1,6.51,27.39Z"></path>
+                                    <path fill="#ecc5b4" d="M18.7,15.83H13.3a1,1,0,0,0-1,1V23.3a1,1,0,0,0,.45.83l2.7,1.8a1,1,0,0,0,1.1,0l2.7-1.8a1,1,0,0,0,.45-.83V16.83A1,1,0,0,0,18.7,15.83Z"></path>
+                                    <path fill="#ecc5b4" d="M21.5,12.77h-11a3,3,0,0,0,0,6h11a3,3,0,0,0,0-6Z"></path>
+                                    <path fill="#f4dab7" d="M18.46,9H13.54a3.49,3.49,0,0,0-3.49,3.49v3.36a5.95,5.95,0,0,0,11.9,0V12.46A3.49,3.49,0,0,0,18.46,9Z"></path>
+                                    <path fill="#d6b5b0" d="M23.2,12.66l.06,0A7.28,7.28,0,0,0,12.88,6.8a1.08,1.08,0,0,0,.06.77,9.75,9.75,0,0,0,2.94,3.58,8.84,8.84,0,0,0,5.28,1.76A9,9,0,0,0,23.2,12.66Z"></path>
+                                    <path fill="#d6b5b0" d="M19,6.76A7.29,7.29,0,0,0,8.7,13.39v.39a7.85,7.85,0,0,0,1.19.09,9.26,9.26,0,0,0,7-3.21A10.45,10.45,0,0,0,19,6.8Z"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="profile" width="32" height="32">
+                                    <circle cx="16" cy="16" r="15" fill="#96d7ff"></circle>
+                                    <path fill="#86c3ef" d="M2.35,17A15,15,0,0,1,25.59,4.48a15,15,0,1,0-17.83,24A15,15,0,0,1,2.35,17Z"></path>
+                                    <path fill="#bf9e99" d="M16,6.09a7.31,7.31,0,0,0-7.3,7.3v15.1a1,1,0,0,0,.55.89,14.87,14.87,0,0,0,13.5,0,1,1,0,0,0,.55-.89V13.39A7.31,7.31,0,0,0,16,6.09Z"></path>
+                                    <path fill="#ff9797" d="M16,31a14.88,14.88,0,0,0,10.09-3.94.62.62,0,0,0,0-.23,6.65,6.65,0,0,0-6.3-4.54h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23A14.88,14.88,0,0,0,16,31Z"></path>
+                                    <path fill="#e47979" d="M6.51,27.39a6.67,6.67,0,0,1,6.3-4.54h7.51a6.62,6.62,0,0,1,4.38,1.68,6.65,6.65,0,0,0-4.95-2.24h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23c.18.17.38.32.57.48A.8.8,0,0,1,6.51,27.39Z"></path>
+                                    <path fill="#ecc5b4" d="M18.7,15.83H13.3a1,1,0,0,0-1,1V23.3a1,1,0,0,0,.45.83l2.7,1.8a1,1,0,0,0,1.1,0l2.7-1.8a1,1,0,0,0,.45-.83V16.83A1,1,0,0,0,18.7,15.83Z"></path>
+                                    <path fill="#ecc5b4" d="M21.5,12.77h-11a3,3,0,0,0,0,6h11a3,3,0,0,0,0-6Z"></path>
+                                    <path fill="#f4dab7" d="M18.46,9H13.54a3.49,3.49,0,0,0-3.49,3.49v3.36a5.95,5.95,0,0,0,11.9,0V12.46A3.49,3.49,0,0,0,18.46,9Z"></path>
+                                    <path fill="#d6b5b0" d="M23.2,12.66l.06,0A7.28,7.28,0,0,0,12.88,6.8a1.08,1.08,0,0,0,.06.77,9.75,9.75,0,0,0,2.94,3.58,8.84,8.84,0,0,0,5.28,1.76A9,9,0,0,0,23.2,12.66Z"></path>
+                                    <path fill="#d6b5b0" d="M19,6.76A7.29,7.29,0,0,0,8.7,13.39v.39a7.85,7.85,0,0,0,1.19.09,9.26,9.26,0,0,0,7-3.21A10.45,10.45,0,0,0,19,6.8Z"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="profile" width="32" height="32">
+                                    <circle cx="16" cy="16" r="15" fill="#96d7ff"></circle>
+                                    <path fill="#86c3ef" d="M2.35,17A15,15,0,0,1,25.59,4.48a15,15,0,1,0-17.83,24A15,15,0,0,1,2.35,17Z"></path>
+                                    <path fill="#bf9e99" d="M16,6.09a7.31,7.31,0,0,0-7.3,7.3v15.1a1,1,0,0,0,.55.89,14.87,14.87,0,0,0,13.5,0,1,1,0,0,0,.55-.89V13.39A7.31,7.31,0,0,0,16,6.09Z"></path>
+                                    <path fill="#ff9797" d="M16,31a14.88,14.88,0,0,0,10.09-3.94.62.62,0,0,0,0-.23,6.65,6.65,0,0,0-6.3-4.54h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23A14.88,14.88,0,0,0,16,31Z"></path>
+                                    <path fill="#e47979" d="M6.51,27.39a6.67,6.67,0,0,1,6.3-4.54h7.51a6.62,6.62,0,0,1,4.38,1.68,6.65,6.65,0,0,0-4.95-2.24h-7.5A6.65,6.65,0,0,0,6,26.83a.62.62,0,0,0,0,.23c.18.17.38.32.57.48A.8.8,0,0,1,6.51,27.39Z"></path>
+                                    <path fill="#ecc5b4" d="M18.7,15.83H13.3a1,1,0,0,0-1,1V23.3a1,1,0,0,0,.45.83l2.7,1.8a1,1,0,0,0,1.1,0l2.7-1.8a1,1,0,0,0,.45-.83V16.83A1,1,0,0,0,18.7,15.83Z"></path>
+                                    <path fill="#ecc5b4" d="M21.5,12.77h-11a3,3,0,0,0,0,6h11a3,3,0,0,0,0-6Z"></path>
+                                    <path fill="#f4dab7" d="M18.46,9H13.54a3.49,3.49,0,0,0-3.49,3.49v3.36a5.95,5.95,0,0,0,11.9,0V12.46A3.49,3.49,0,0,0,18.46,9Z"></path>
+                                    <path fill="#d6b5b0" d="M23.2,12.66l.06,0A7.28,7.28,0,0,0,12.88,6.8a1.08,1.08,0,0,0,.06.77,9.75,9.75,0,0,0,2.94,3.58,8.84,8.84,0,0,0,5.28,1.76A9,9,0,0,0,23.2,12.66Z"></path>
+                                    <path fill="#d6b5b0" d="M19,6.76A7.29,7.29,0,0,0,8.7,13.39v.39a7.85,7.85,0,0,0,1.19.09,9.26,9.26,0,0,0,7-3.21A10.45,10.45,0,0,0,19,6.8Z"></path>
+                                  </svg>
+                                  
+                            </div>
+                            <div class="mt-4 lg:mt-10 text-black text-2xl lg:flex justify-between font-medium" >
                                 <div>Spend vs Budget</div>
                                 <div>$7.548/$24000</div>
                             </div>
                         </div>
                     </div>
         
-                    <div class="flex items-center mb-3">
-                        <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-lg font-medium bg-green-800 text-gray-200 font-bold font-sans">
+                    <div class="flex items-center my-4 lg:my-10">
+                        <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-base font-medium bg-green-800 text-gray-200 font-bold font-sans">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000"></path> </svg>
                             Alert Testing- 99%
                         </span>
-                        <hr class="flex-grow border-t border-gray-300 ml-2">
+                        <hr class="flex-grow border-2 border-gray-300 ml-2">
                     </div>
 
                     <!-- Second vertically stacked card -->
-                    <div class="bg-green-200 border shadow-sm rounded-t-xl">
+                    <div class="pb-4 shadow-sm rounded-t-xl"style="background-color: #769a76;">
                         <div class="rounded-s-xl rounded-e-xl">
                             <div class="flex items-center bg-green-800 p-2 rounded-t-xl">
-                                <div class="w-4 h-4 rounded-full bg-white mr-2"></div>
-                                <div class="w-4 h-4 rounded-full bg-white mr-2"></div>
-                                <div class="w-4 h-4 rounded-full bg-white mr-2"></div>
+                                <div class="w-4 h-4 rounded-full bg-gray-200 mr-2"></div>
+                                <div class="w-4 h-4 rounded-full bg-gray-200 mr-2"></div>
+                                <div class="w-4 h-4 rounded-full bg-gray-200 mr-2"></div>
                               </div>
                               </div>
-                              <div class="mt-4 p-4 inline-flex flex">
-                                <h2 class="font-bold text-gray-700 text-2xl">Weekly Recommendations</h2>
-                                <span class="border w-8 h-18 bg-orange-600 rounded-lg text-white font-bold p-1 flex items-center justify-center ml-3">A</span>
+                              <div class="p-4 inline-flex">
+                                <h2 class="text-lg lg:text-2xl block font-meduim text-black">Weekly Recommendations</h2>
+                                <span class="border w-8 h-8 bg-orange-600 rounded-lg text-white font-bold p-1 flex items-center justify-center ml-3">A</span>
                               </div>
-                              <div class="flex items-center justify-around font-sans mb-10">
+                              <div class="flex items-center justify-around font-sans mb-8">
+                                <div class="flex inline-flex items-center">
                                     <span class="font-bold text-xl">23.9</span>
-                                    <span class="border w-16 h-4 bg-green-900 rounded-full"></span>
-                                    <span class="font-bold text-xl">3.8%</span>
+                                    <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-square-fill ml-2 align-middle rounded-full" viewBox="0 0 16 16">
+                                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z" fill="red"></path>
+                                    </svg>
+                                </div>
+                                
+                                    
+                                    <span class="w-12 lg:w-24 h-2 bg-green-200 rounded-full"></span>
+
+
+                                    <div class="flex inline-flex items-center">
+                                        <span class="font-bold text-xl">3.8%</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-square-fill ml-2 rounded-full" viewBox="0 0 16 16"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z"/> </svg>
+                                        
+                                    </div>
+                                    
                               </div>
                               
                             <!-- Content of the second card -->
                         </div>
 
-                        <div class="flex justify-end mt-4">
-                            <span class="border w-20 h-4 ml-2 bg-green-300 rounded-full"></span>
-                            <span class="border w-10 h-4 ml-2 bg-green-300 rounded-full"></span>
-                            <span class="border w-6 h-4 ml-2 bg-green-300 rounded-full"></span>
+                        <div class="flex justify-end mt-4 lg:mt-10">
+                            <span class=" w-20 h-2 ml-2 bg-green-100 rounded-full"></span>
+                            <span class=" w-10 h-2 ml-2 bg-green-100 rounded-full"></span>
+                            <span class=" w-6 h-2 ml-2 bg-green-100 rounded-full"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <!-- Second section -->
+
+        <section class="flex flex-col lg:flex-row lg:justify-center lg:items-center mt-10 lg:mt-20">
+            <!-- First Card -->
+            <div class="relative flex  m-4 p-4 lg:p-8 max-w-sm">
+                <img src="./images/smiley.svg" alt="art" class="w-12 lg:w-24 absolute bottom-0 left-44 sm:left-56">
+                <div>
+                <h3 class="text-2xl font-bold text-gray-800 ">
+                    Modern art for anyone
+                </h3>
+                <p class="mt-2 text-lg font-medium text-gray-500">
+                    An investment in knowledge pays the best interest grow your creative Entrepreneurship.
+                </p>
+                <a class="mt-3 inline-flex items-center gap-2 mt-5 text-base font-medium text-blue-500 text-lg hover:text-blue-700" href="#">
+                    Explore partners
+                    <svg class="w-2.5 h-auto" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+            </div>
+
+            
+
+                <!--Second card (To the Right) -->
+
+                <div class="flex  p-4 md:p-5">
+                    <!-- Three Small Cards in a Grid Layout (Three Columns) -->
+                    <div class="grid sm:grid-cols-3 gap-4">
+                        
+                        <div class="flex flex-col max-w-sm rounded-xl px-4 py-5 lg:px-8 lg:py-10 hover:bg-green-200 duration-500 hover:shadow-xl">
+                                    <div class="my-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"> <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/> <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/> </svg>
+                                    </div>
+                                     
+                                    <h2 class="font-bold text-2xl my-2">Expert Teachers</h2>
+                                    <div class="my-2 text-lg text-gray-500">
+                                        <p>Connecting people who want to learn with great teachers</p>
+                                    </div>
+                                    
+                                                               <!-- Content for Small Card 1 -->
+                        </div>
+                
+                        <!-- Small Card 2 -->
+                        <div class="flex flex-col max-w-sm rounded-xl px-4 py-5 lg:px-8 lg:py-10 hover:bg-green-200 duration-500 hover:shadow-xl">
+                            <div class="my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"/></svg>
+                            </div>
+                             
+                            <h2 class="font-bold text-2xl my-2">Online Courses</h2>
+                            <div class="my-2 text-lg text-gray-500">
+                                <p>Connecting people who want to learn with great teachers</p>
+                            </div>
+                            
+                                                       <!-- Content for Small Card 1 -->
+                </div>
+                
+                        <!-- Small Card 3 -->
+                        <div class="flex flex-col max-w-sm rounded-xl px-4 py-5 lg:px-8 lg:py-10 hover:bg-green-200 duration-500 hover:shadow-xl">
+                            <div class="my-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/> <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/> <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/> </svg>
+                            </div>
+                             
+                            <h2 class="font-bold text-2xl my-2">Early Registration</h2>
+                            <div class="my-2 text-lg text-gray-500">
+                                <p>Connecting people who want to learn with great teachers</p>
+                            </div>
+                            
+                                                       <!-- Content for Small Card 1 -->
+                </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+        
         
     </main>
 </body>
