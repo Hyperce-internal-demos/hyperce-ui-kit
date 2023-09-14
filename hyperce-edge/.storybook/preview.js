@@ -1,3 +1,4 @@
+import "../src/styles/tailwind.css"
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
@@ -11,5 +12,4 @@ const preview = {
   },
 };
 
-import "../src/styles/main.css";
 export default preview;
