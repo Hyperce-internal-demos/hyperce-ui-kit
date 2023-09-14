@@ -1,7 +1,7 @@
 {
-  "name": "hyperce-edge",
-  "private": true,
-  "version": "0.1.0",
+  "name": "@hyperce.io/hyperce-edge",
+  "private": false,
+  "version": "0.1.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,15 +11,22 @@
     "storybook": "concurrently 'npm:watch:*'",
     "watch:storybook": "storybook dev -p 6006",
     "watch:tailwind": "npx tailwindcss -i ./src/index.css -o ./src/styles/tailwind.css --watch",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "buildLib": "rollup -c"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.22.15",
+    "@rollup/plugin-babel": "^6.0.3",
     "@storybook/addon-storysource": "^7.4.1",
     "concurrently": "^8.2.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-uglify": "^6.0.4"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
     "@storybook/addon-essentials": "^7.4.1",
     "@storybook/addon-interactions": "^7.4.1",
     "@storybook/addon-links": "^7.4.1",
@@ -38,9 +45,28 @@
     "eslint-plugin-storybook": "^0.6.13",
     "postcss": "^8.4.29",
     "prop-types": "^15.8.1",
+    "rollup": "^3.29.1",
     "storybook": "^7.4.1",
     "storybook-dark-mode": "^1.0.7",
     "tailwindcss": "^3.3.3",
+    "tslib": "^2.6.2",
     "vite": "^4.4.5"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperce-internal-demos/hyperce-ui-kit.git"
+  },
+  "keywords": [
+    "hyperce",
+    "ui",
+    "kit"
+  ],
+  "author": "github.com/bibekshhh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hyperce-internal-demos/hyperce-ui-kit/issues"
+  },
+  "homepage": "https://github.com/Hyperce-internal-demos/hyperce-ui-kit#readme"
 }
