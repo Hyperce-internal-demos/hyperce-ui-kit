@@ -6,7 +6,7 @@ import './button.css';
  * Primary UI component for user interaction
  */
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? 'bg-[#23535C] text-white' : 'bg-sky-500/100';
   return (
     <button
       type="button"
