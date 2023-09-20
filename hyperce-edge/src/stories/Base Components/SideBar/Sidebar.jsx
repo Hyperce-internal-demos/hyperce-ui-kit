@@ -43,7 +43,11 @@ export const Sidebar = ({ items, textColor, backgroundColor }) => {
         
         {/* Sidebar content */}
         <div
-          className={`h-full px-3 py-4 overflow-y-auto ${backgroundColor} dark:bg-gray-800`}
+          className={`h-full px-3 py-4 overflow-y-auto dark:bg-gray-800`}
+          style={{
+            backgroundColor: backgroundColor,
+            color: textColor,
+          }}
         >
           <button
             data-drawer-target="default-sidebar"
@@ -96,8 +100,8 @@ Sidebar.propTypes = {
 
 // Default props for text and background colors
 Sidebar.defaultProps = {
-  textColor: 'text-gray-200',
-  backgroundColor: 'bg-gray-900',
+  textColor: '#E5E7EB',
+  backgroundColor: '#111827'
 };
 
 export default Sidebar;

@@ -5,7 +5,7 @@ export default {
     tags: ['autodocs'],
     argTypes: {
         backgroundColor: {control: 'color'},
-        textColor: {control: 'text'}
+        textColor: {control: 'color'}
     }
 }
 
@@ -18,7 +18,8 @@ export const Primary = {
             { id: 4, label: 'Contact us', link: '#', icon:'Contact' },
             { id: 5, label: 'Sign Up', link: '#', icon: 'SignUp' }
         ],
-        textColor: 'text-gray-200'
+        textColor: '#E5E7EB',
+        backgroundColor: '#111827'
     }
 }
 
@@ -30,7 +31,8 @@ export const Secondary = {
            { id: 3, label: 'About', link: '#' },
            { id: 4, label: 'Features', link: '#' },
            { id: 5, label: 'Sign Up', link: '#' }
-
-         ]
+         ],
+         textColor: '#E5E7EB',
+        backgroundColor: '#111827'
 }
 }
